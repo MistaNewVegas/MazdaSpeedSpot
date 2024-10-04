@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MazdaSpeedSpot</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <header class="desktop-navigation">
+            <div class="header-container">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <img src="assets/logo.png" alt="Logo">
+                    </a>
+                    <ul class="nav-header">
+                        <li class="nav-item search-item" style="flex-grow: 1;">
+                            <form action="/search" method="get" class="search-form">
+                                <input type="text" name="query" placeholder="Search by part name, number, stocking ID">
+                                <button type="submit">
+                                    <img src="assets/icons/search.svg" alt="Search">
+                                </button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a href="error.html">
+                                <img src="assets/icons/shopping-cart.svg" alt="Shopping Cart">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="error.html">
+                                <img src="assets/icons/account.svg" alt="Account">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="sub-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="error.html">Merch</a></li>
+                        <li class="nav-item"><a href="error.html">Forum</a></li>
+                        <li class="nav-item"><a href="guide.html">Guide</a></li>
+                        <li class="nav-item"><a href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a href="error.html">Contact Us</a></li>
+                        <li class="nav-item"><a href="error.html">Account</a></li>
+                    </ul>
+                </nav>
+            </div>     
+        </header>
+
+        <header class="mobile-navigation">
+            <nav class="mobile-nav">
+                <div class="top-row">
+                    <div class="nav-item">
+                        <button class="hamburger-menu" onclick="openSidebar()">&#x2261;</button>
+                    </div>
+                
+                    <div class="nav-item-logo">
+                        <a href="index.html">
+                            <img src="assets/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                
+                    <div class="nav-item">
+                        <a href="error.html">
+                            <img src="assets/icons/shopping-cart.svg" alt="Shopping Cart">
+                        </a>
+                        <a href="error.html">
+                            <img src="assets/icons/account.svg" alt="Account">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bottom-row">
+                    <div class="nav-item search-item" style="flex-grow: 1;">
+                        <form action="/search" method="get" class="search-form">
+                            <input type="text" name="query" placeholder="Search by part name, number, stocking ID">
+                            <button type="submit">
+                                <img src="assets/icons/search.svg" alt="Search">
+                            </button>
+                        </form>
+                    </div>
+                </div>                
+
+                <div id="sidebar" class="sidebar">
+                    <button class="close-btn" onclick="closeSidebar()">&#10006;</button>
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Logo">
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a href="guide.html">Guide</a></li>
+                        <li class="nav-item"><a href="forum.html">Forum</a></li>
+                        <li class="nav-item"><a href="error.html">Merch</a></li>
+                        <li class="nav-item"><a href="error.html">Account</a></li>
+                        <li class="nav-item"><a href="error.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                     
+            </nav>  
+        </header>
+        
+        <div class="screen-container">
+            <section class="welcome-section">
+                <img src="assets/part/mazda-splash.jpg" alt="splash of mazda">
+                <div class="welcome-text">
+                    <h1>MAZDASPEED SPOT</h1>
+                    <p>The all in one location for parts, information, and tips about your mazdaspeed. Know what you're looking for? click on "search" to find parts right away. New to the mazdaspeed community? click on guide for a more structured approach</p>
+                    <a href="guide.html">Get Started With a Guide</a>
+                    <a href="shop.html">Find Parts</a>
+                </div>
+            </section>
+            <div class="preview-stack">
+                <section class="shop-preview">
+                    <div class="shop-header">
+                        <h1 class="section-title">Top Sellers</h1>
+                        <hr>
+                        <p>Welcome to our Top Sellers collection, where we feature the best-performing and most popular parts for your Mazdaspeed 3. From performance upgrades to essential maintenance components, these items are tried and tested by enthusiasts like you. Whether you're looking to boost horsepower, enhance handling, or simply elevate your driving experience, our top-selling products are designed to deliver exceptional results and keep your car running at its peak. </p>
+                        <hr>
+                    </div>
+                    <div class="shop-preview-grid">
+                        <!-- Product 1 -->
+                        <div class="shop-preview-item">
+                            <img src="assets/part/part.png" alt="Cold Air Intake">
+                            <div class="item-header">
+                                <div class="preview-identity">
+                                    <h1>Cold Air Intake</h1>
+                                    <div class="rating">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                    </div>
+                                </div>
+                                <h2>$299.99</h2>
+                            </div>
+                        </div>
+                    
+                        <!-- Product 2 -->
+                        <div class="shop-preview-item">
+                            <img src="assets/part/part.png" alt="Turbo Inlet Pipe">
+                            <div class="item-header">
+                                <div class="preview-identity">
+                                    <h1>Turbo Inlet Pipe</h1>
+                                    <div class="rating">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                    </div>
+                                </div>
+                                <h2>$149.99</h2>
+                            </div>
+                        </div>
+                    
+                        <!-- Product 3 -->
+                        <div class="shop-preview-item">
+                            <img src="assets/part/part.png" alt="Coilover Suspension Kit">
+                            <div class="item-header">
+                                <div class="preview-identity">
+                                    <h1>Coilover Suspension Kit</h1>
+                                    <div class="rating">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                    </div>
+                                </div>
+                                <h2>$899.99</h2>
+                            </div>
+                        </div>
+                    
+                        <!-- Product 4 -->
+                        <div class="shop-preview-item">
+                            <img src="assets/part/part.png" alt="Performance Downpipe">
+                            <div class="item-header">
+                                <div class="preview-identity">
+                                    <h1>Performance Downpipe</h1>
+                                    <div class="rating">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                    </div>
+                                </div>
+                                <h2>$449.99</h2>
+                            </div>
+                        </div>
+                    
+                        <!-- Product 5 -->
+                        <div class="shop-preview-item">
+                            <img src="assets/part/part.png" alt="Front Mount Intercooler">
+                            <div class="item-header">
+                                <div class="preview-identity">
+                                    <h1>Front Mount Intercooler</h1>
+                                    <div class="rating">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                    </div>
+                                </div>
+                                <h2>$699.99</h2>
+                            </div>
+                        </div>
+                    
+                        <!-- Product 6 -->
+                        <div class="shop-preview-item">
+                            <img src="assets/part/part.png" alt="Short Shifter Kit">
+                            <div class="item-header">
+                                <div class="preview-identity">
+                                    <h1>Short Shifter Kit</h1>
+                                    <div class="rating">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                        <img src="assets/icons/star.svg" alt="Star">
+                                    </div>
+                                </div>
+                                <h2>$199.99</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="width: 80%">
+                    <a href="shop.html" class="preview-redirect">Find Parts</a>              
+                </section>
+                <section class="guide-preview-section">
+                    <div class="guide-preview-header">
+                        <h1 class="section-title">Guides</h1>
+                        <hr>
+                        <p>Whether you're a seasoned tuner or just getting started, our comprehensive guides are designed to help you get the most out of your MazdaSpeed 3. Explore our step-by-step tutorials, expert tips, and purchasing advice to ensure you're making the right moves on your build. Get ready to take your driving experience to the next level with confidence.</p>
+                        <hr>
+                    </div>
+                    <div class="guide-preview-stack">
+                        <div class="guide-preview">
+                            <h2>Build Guide - From Stock to Performance</h2>
+                            <p>Just got your hands on a stock MazdaSpeed 3? This guide will take you step-by-step through the most essential upgrades to unlock your car's full potential. Whether you're after power, handling, or looks, we cover it all in this beginner's build guide.</p>
+                            <a href="guide.html" class="guide-preview-read">READ</a>
+                        </div>
+                        <hr>
+                        <div class="guide-preview">
+                            <h2>Why Upgrade to a High Pressure Fuel Pump (HPFP)?</h2>
+                            <p>Wondering why upgrading your High Pressure Fuel Pump is crucial when building your MS3? Learn about the benefits, the risks of running the stock pump, and how this upgrade supports your other modifications for safe and reliable power.</p>
+                            <a href="guide.html" class="guide-preview-read">READ</a>
+                        </div>
+                        <hr>
+                        <div class="guide-preview">
+                            <h2>MazdaSpeed 3 Purchasing Guide</h2>
+                            <p>Thinking of buying a used MazdaSpeed 3? This guide provides an in-depth look at what to check before you buy, from engine health to potential common issues and what to expect during ownership. Avoid costly surprises and get the most value for your money.</p>
+                            <a href="guide.html" class="guide-preview-read">READ</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <a href="guide.html" class="preview-redirect">More Guides</a>
+                    
+                </section>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html" class="footer-logo">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="error.html">Merch</a></li>
+                <li class="nav-item"><a href="error.html">Forum</a></li>
+                <li class="nav-item"><a href="guide.html">Guide</a></li>
+                <li class="nav-item"><a href="shop.html">Shop</a></li>
+                <li class="nav-item"><a href="error.html">Contact Us</a></li>
+                <li class="nav-item"><a href="error.html">Account</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function openSidebar() {
+            document.getElementById("sidebar").classList.add('open-sidebar');
+        }
+
+        function closeSidebar() {
+            document.getElementById("sidebar").classList.remove('open-sidebar');
+        }
+    </script>
+
+</html>
